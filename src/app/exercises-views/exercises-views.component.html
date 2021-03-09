@@ -1,0 +1,238 @@
+<head>
+
+    <style>
+ .outerdiv{
+      position: absolute;
+      height: 600px;
+      width: 1250px;
+      left: 50px;
+      background-color:#FAFAFA; 
+    }
+    .insidediv{
+      position: absolute;
+      left: 100px;
+      top: 50px;
+      width: 1050px;
+      height: 540px;
+      background-color: #eeeeee;
+    }
+    .greenline{
+      position: absolute;
+      left: 80px;
+      top:80px;
+      height: 500px;
+      width: 20px;
+      border-radius: 3px;
+      background-color: #40CC8B;
+    }
+    .habibifit{
+      position: absolute;
+      left: 150px;
+      top:20px;
+    }
+ 
+    .leftbar{
+        position: absolute;
+        background-color: #FAFAFA;
+        left: 30px;
+        top:10px;
+        height: 480px;
+        width: 200px;
+ 
+    }
+ 
+    .dashboard{
+     position: absolute;
+     left: 50px;
+     top: 40px;
+     font-size: medium;
+     font-weight: bold;
+     color:#9F9F9F ;   
+    }
+ 
+    .homeimage{
+        position: absolute;
+        left: 63px;
+        top:100px;
+ 
+    }
+    .analyticsspelling{
+      position: absolute;
+      left:1px;
+      top:150px;  
+    }
+    .duration{
+        position:absolute;
+        left :300px;
+        top:100px;
+    }
+    .textbox1{
+        position: absolute;
+        left:870px;
+        top:100px;
+    }
+    .line1{
+        position: absolute;
+         height: 3px;
+         width:700px;
+         background-color:#FAFAFA;
+         left: 300px;
+         top:150px;
+    }
+    .sets{
+        position:absolute;
+        left :300px;
+        top:200px;
+    }
+ 
+    .textbox2{
+        position: absolute;
+        left:870px;
+        top:200px;
+    }
+ 
+    .line2{
+         position: absolute;
+         height: 3px;
+         width:700px;
+         background-color:#FAFAFA;
+         left: 300px;
+         top:250px;
+    }
+    .exerciseperset{
+        position: absolute;
+        left :300px;
+        top:300px;
+    }
+ 
+    .textbox3{
+        position: absolute;
+        left:870px;
+        top:300px;
+    }
+ 
+    .line3{
+         position: absolute;
+         height: 3px;
+         width:700px;
+         background-color:#FAFAFA;
+         left: 300px;
+         top:350px;
+    }
+    .buttonwithnext{
+         position: absolute;
+         left: 800px;
+         top:450px;
+    }
+    .buttonwithprev{
+         position: absolute;
+         left: 300px;
+         top:450px;
+    }
+ 
+    h3{
+      color: darkgrey;
+    }
+ 
+    .textboxesdiv1{
+       position: absolute;
+       width: 250px;
+       left: 75px;
+       top:75px;
+       
+   }
+
+   .textboxesdiv2{
+       position: absolute;
+       width: 250px;
+       left: 400px;
+       top:75px;
+   }
+   .thumbnailtext{
+       position: absolute;
+       left: 110px;
+       top: 150px;
+   }
+   .thumbnailbox{
+    position: absolute;
+    width:200px;
+    height:150px;
+    left: 80px;
+    top:200px;
+    background-color: #eeeeee;
+   }
+   .thumbnailvideo{
+       position: absolute;
+       left: 460px;
+       top: 150px;
+   }
+   .thumbnailvideobox{
+    position: absolute;
+    width:200px;
+    height:150px;
+    left: 400px;
+    top:200px;
+    background-color: #eeeeee;
+   }
+
+ .view{
+     position: absolute;
+     left: 250px;
+     top:40px;
+     width: 750px;
+     height: 400px;
+     background-color: #FAFAFA;
+ }
+ 
+ 
+     </style>
+    </head>
+
+    <body>
+        
+       
+       
+
+        <div class="view">
+            <div class="textboxesdiv1">
+             <div class="form-group w-100">
+             <input type="text" class="form-control" id="example3" placeholder="Name" name="name">
+             </div>
+             </div>
+     
+             
+                 <div class="textboxesdiv2">
+                 <div class="form-group w-100">
+                 <input type="text" class="form-control" id="example3" placeholder="Days" name="days">
+                 
+                 </div>
+                 </div>
+     
+                 <div class="thumbnailtext">
+                
+
+                     <h3>Thumbnail</h3>
+                 </div>
+                 <div class="thumbnailbox">
+                  <a [routerLink]="">
+                   <img [src]="thumbnailimage" style="position: absolute;top:40px;left: 60px;"/>  
+                   
+                  </a>   
+                  
+     
+                 </div>
+     
+                 <div class="thumbnailvideo">
+                     <h3>Video</h3>
+                 </div>
+     
+                 <div class="thumbnailvideobox">
+                     <a [routerLink]="">
+                         <img [src]="thumbnailvideo" style="position: absolute;top:40px;left: 60px;"/>  
+                        </a>       
+                 </div>
+     
+             </div>
+
+
+    </body>

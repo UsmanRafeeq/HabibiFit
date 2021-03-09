@@ -1,0 +1,188 @@
+<head>
+    <style>
+
+   .outerdiv{
+     position: absolute;
+     height: 600px;
+     width: 1250px;
+     left: 50px;
+     background-color:#FAFAFA; 
+   }
+   .insidediv{
+     position: absolute;
+     left: 100px;
+     top: 50px;
+     width: 1050px;
+     height: 540px;
+     background-color: #eeeeee;
+   }
+   .greenline{
+     position: absolute;
+     left: 80px;
+     top:80px;
+     height: 500px;
+     width: 20px;
+     border-radius: 3px;
+     background-color: #40CC8B;
+   }
+   .habibifit{
+     position: absolute;
+     left: 150px;
+     top:20px;
+   }
+
+   .leftbar{
+       position: absolute;
+       background-color: #FAFAFA;
+       left: 30px;
+       top:10px;
+       height: 480px;
+       width: 200px;
+
+   }
+
+   .dashboard{
+    position: absolute;
+    left: 50px;
+    top: 40px;
+    font-size: medium;
+    font-weight: bold;
+    color:#9F9F9F ;   
+   }
+
+   .homeimage{
+       position: absolute;
+       left: 63px;
+       top:100px;
+
+   }
+   .analyticsspelling{
+     position: absolute;
+     left:1px;
+     top:150px;  
+   }
+   .insidetableheader  {
+     position: absolute;
+     left: 300px;
+     top:120px;
+     background-color: #FAFAFA;
+     height: 380px;
+     width:700px;
+   }
+
+   .maintable{
+    position: absolute;
+     left: 20px;
+     top:10px;
+     background-color: #FAFAFA;
+     height: 350px;
+     width:650px;
+     background-color:#FAFAFA;
+     border-color: black;
+     border: 1px solid black;
+     
+   }
+
+   
+   table td{
+    border: 1px solid black;
+    border-collapse: separate;
+    width: 130px;
+    border-spacing: 50px;
+
+    background-color:#40CC8B;
+    text-align: left; 
+    
+   }
+   .addprograme{
+     position: absolute;
+     margin-left: 850px;
+     top:20px;
+     height: 90px;
+     width: 150px;
+     background-color: #FAFAFA;
+     border-radius: 20px;
+   }
+  
+
+   </style>
+   </head>
+   <body>
+    <div class="outerdiv">
+      <div class="greenline"></div>
+      <div class="habibifit">
+        <img [src]="habibifithome"/>
+
+      </div>
+
+     <div class="insidediv">
+
+      <div class="addprograme">
+        <a routerLink="/add-programe" (click) = "navigate()">
+          <img [src]="addprograme"style="margin-left:40px; margin-top:3px;"/>
+          <h6 style="margin-left: 10px;">Add Programes</h6>
+        </a>
+      </div>
+
+      <div class="leftbar">
+        <div class="dashboard">DASH BOARD</div>
+
+        
+        <div class="homeimage">
+          <a href="">
+              <img [src]="imageUrlHomePic" alt="image not found"/>
+                  <div style="margin-left: 10px; color: #40CC8B;">Home</div>
+
+                      <img [src]="analyticsicon" alt="image not found" style= "margin-top: 50px; margin-left: 10px;"/>
+                          <div class="analyticsspelling">
+                              <img [src]="analyticsspelling" alt="image not found" />
+                                      </div>
+                                              </a>
+                                                  </div>
+
+      </div>
+
+     
+     
+      <div class="insidetableheader">
+
+        
+        <div class="maintable" >
+
+          <table >
+            
+              <tr>
+                 <td>#</td> 
+                <td>Programs</td>
+               
+                
+                <td>View</td>
+                <td>Edit</td>
+                <td>Delete</td>
+                <td>Live</td>
+              </tr>
+              <tr *ngFor="let list of programeLength">
+                <td>{{list.id}}</td>
+                <td>{{list.name}}</td>
+                <td><a href=""><img [src]="view"/></a></td>
+                <td><a href=""><img [src]="edit"/></a></td>
+                <td><a [routerLink]="" (click) = "deletee(list.id)" id="id" name="id"><img [src]="delete"/></a></td>
+                <td></td> 
+              </tr>
+
+            
+               
+              
+              
+              </table>
+
+        </div>
+      </div>
+
+     </div>
+      
+    </div>
+
+
+
+   </body>
